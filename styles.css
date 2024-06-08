@@ -1,0 +1,297 @@
+*{
+margin-top: 0;
+margin-bottom: 0;
+padding: 0;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+box-sizing: border-box;
+
+}
+
+body{
+
+        height: 100vh; 
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: row;
+        overflow: scroll;
+        padding: 10px;
+        background: linear-gradient(100deg,#D8B5FF,#1EAE98);
+        background-repeat: no-repeat;
+}
+
+
+
+main{
+    display: flex;
+    align-items: center; 
+
+}
+
+.inputContainer h2{
+    
+    font-size: 25px;
+    margin-bottom: 10px;
+   
+   
+}
+.inputContainer{
+    height: 100%;
+    width: 350px;
+    padding: 4.2rem;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ToDoList{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+
+}
+
+.displayContainer{
+    height: 500px;
+    width: 350px;
+    padding: 4rem;
+    margin: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    font-size: 17px;
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+   
+}
+
+
+
+.inputContainer #taskInput{
+
+    width: 20rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+
+
+}
+
+.SelectAndBtn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ToDoList select{
+    height: 40px;
+    background-color: #D8B5FF;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.ToDoList button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #D8B5FF;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+
+.displayContainer .High{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column;
+    gap: 10px;
+    
+}
+
+.displayContainer .High .TaskDel{
+    flex-direction: row;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: antiquewhite;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+
+
+}
+
+
+.displayContainer .Medium{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.displayContainer .Low{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+
+
+.task1{
+
+    width: 100%px;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #ff6361;
+
+}
+
+.task2{
+
+    width: 100%px;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #e3b505;
+}
+
+.task3{
+
+    width: 100%px;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #56a3a6;
+}
+
+.DoneContainer{
+
+    height: 100%;
+    width: 350px;
+    padding: 4rem;
+    margin: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    overflow: scroll;
+
+}
+
+.DoneContainer .done{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.DoneContainer .task1{
+
+    background-color: gray;
+    gap: 10px;
+
+}
+
+
+.DoneContainer .task2{
+
+    background-color: gray;
+
+}
+
+.DoneContainer .task3{
+
+
+
+    background-color: gray;
+
+}
+
+
+.DoneContainer .del{
+    left: 170px;
+    bottom: 50px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #1EAE98;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 900px) {
+
+
+    body{
+        height: auto; 
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    
+    
+    
+    main{
+        display: flex;
+        align-items: center; 
+        flex-direction: column;
+    
+    }
+
+
+
+  }  
+
+
+  @media only screen and (max-width: 600px) {
+
+
+    body{
+        height: auto; 
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    
+    
+    
+    main{
+        display: flex;
+        align-items: center; 
+        flex-direction: column;
+    
+    }
+
+
+
+  }

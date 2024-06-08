@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    
+    <title>Task list</title>
+</head>
+<body>
+
+    <main class="Container">
+
+        <div class="inputContainer">
+                <div class="ToDoList">
+                    <h2>To do List</h2>
+                    <label for="Taskinput"></label>
+                    <input type="text" id="taskInput" name="Taskinput" placeholder="Enter text here~"
+                    rows="2" cols=20>
+                    <br>
+                    <label for="priority"></label>
+                    <div class="SelectAndBtn">
+                        <select name="priority" id="prioritysel">
+                            <option value="0">Select priority</option>
+                            <option value="1">High</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Low</option>
+                            </select>
+                            <br>
+                            <button id="btn" >+</button>
+                    </div>
+
+                </div>
+        </div>
+
+        <div class="displayContainer">
+            <h2>List</h2>
+            <div class="High">
+
+            </div>
+
+
+            <div class="Medium">
+
+            </div>
+
+            <div class="Low">
+
+            </div>
+
+            <ul class="listCon">
+                <!-- <li id="check">task 1</li>
+                <li>task 2</li> -->
+            </ul>
+
+        </div>
+
+        <div class="DoneContainer">
+            <h2>Bin</h2>
+            <button class="del" id = 'delbtn'>Clear</button>
+            <div class="done" id="done">
+
+            </div>
+
+        </div>
+
+
+    </main>
+        
+
+
+   
+    
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
