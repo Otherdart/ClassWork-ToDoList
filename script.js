@@ -32,6 +32,8 @@ function addtask(){
                 newtask.className = `task${output}`;
                 newtask.innerText = TaskInput.value;
                 HighPriority.appendChild(newtask);
+                // localStorage.setItem("HighPriority", newtask);
+                // localStorage.getItem("HighPriority");
                 newtask.addEventListener('click', () => {
 
                     const targetDiv = document.querySelector('#done');
@@ -98,6 +100,11 @@ function addtask(){
         }
 
 }
+
+
+
+document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
+
 
 // returndata();
 
